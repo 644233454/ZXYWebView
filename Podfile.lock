@@ -1,0 +1,26 @@
+PODS:
+  - HandyJSON (5.0.2)
+  - RTRootNavigationController (0.8.0):
+    - RTRootNavigationController/Core (= 0.8.0)
+  - RTRootNavigationController/Core (0.8.0)
+  - SnapKit (4.2.0)
+
+DEPENDENCIES:
+  - HandyJSON
+  - RTRootNavigationController
+  - SnapKit
+
+SPEC REPOS:
+  trunk:
+    - HandyJSON
+    - RTRootNavigationController
+    - SnapKit
+
+SPEC CHECKSUMS:
+  HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
+  RTRootNavigationController: 36c6301870f0467f89d69f4286795340b537d473
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+
+PODFILE CHECKSUM: be3912951a9df25c99c7899d3e2492c2c0d7a96e
+
+COCOAPODS: 1.11.2

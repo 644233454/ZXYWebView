@@ -1,0 +1,966 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		02F4BAB52A23D60DDF6D1692 /* Pods_ZXYWebView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FA746C044F7A1EB9A2C5995 /* Pods_ZXYWebView.framework */; };
+		29034885FA60029E14A6C1EE /* Pods_ZXYWebView_ZXYWebViewUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2BF0BF6CF4555DE8B6C14AA /* Pods_ZXYWebView_ZXYWebViewUITests.framework */; };
+		6BF9EC117D661AF5AC8BF7C0 /* Pods_ZXYWebViewTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 13C6680160A20ACF28C4B0BE /* Pods_ZXYWebViewTests.framework */; };
+		81A9A4932802839100169DDF /* ZXYWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A9A4652802839100169DDF /* ZXYWebView.swift */; };
+		81A9A4942802839100169DDF /* ZXYWebViewPool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A9A4662802839100169DDF /* ZXYWebViewPool.swift */; };
+		81A9A4952802839100169DDF /* ZXYWebEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A9A4672802839100169DDF /* ZXYWebEntity.swift */; };
+		81A9A4962802839100169DDF /* ZXYWebNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A9A4682802839100169DDF /* ZXYWebNavigationBar.swift */; };
+		81A9A4972802839100169DDF /* ZXYWebViewHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A9A4692802839100169DDF /* ZXYWebViewHandle.swift */; };
+		81A9A4982802839100169DDF /* dealerNews.html in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A46B2802839100169DDF /* dealerNews.html */; };
+		81A9A4992802839100169DDF /* industryNews.html in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A46C2802839100169DDF /* industryNews.html */; };
+		81A9A49A2802839100169DDF /* gray_stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A46E2802839100169DDF /* gray_stars.png */; };
+		81A9A49B2802839100169DDF /* finger_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A46F2802839100169DDF /* finger_down.png */; };
+		81A9A49C2802839100169DDF /* gold_stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A4702802839100169DDF /* gold_stars.png */; };
+		81A9A49D2802839100169DDF /* left_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A4712802839100169DDF /* left_arrow.png */; };
+		81A9A49E2802839100169DDF /* triangle.png in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A4722802839100169DDF /* triangle.png */; };
+		81A9A49F2802839100169DDF /* finger_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A4732802839100169DDF /* finger_up.png */; };
+		81A9A4A02802839100169DDF /* play1.png in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A4742802839100169DDF /* play1.png */; };
+		81A9A4A12802839100169DDF /* parse.png in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A4752802839100169DDF /* parse.png */; };
+		81A9A4A22802839100169DDF /* play2.png in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A4762802839100169DDF /* play2.png */; };
+		81A9A4A32802839100169DDF /* newsDetails.css in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A4782802839100169DDF /* newsDetails.css */; };
+		81A9A4A42802839200169DDF /* public.css in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A4792802839100169DDF /* public.css */; };
+		81A9A4A52802839200169DDF /* previewImage.css in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A47A2802839100169DDF /* previewImage.css */; };
+		81A9A4A62802839200169DDF /* mui.min.css in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A47B2802839100169DDF /* mui.min.css */; };
+		81A9A4A72802839200169DDF /* ShareHeader.css in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A47C2802839100169DDF /* ShareHeader.css */; };
+		81A9A4A82802839200169DDF /* introduction.css in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A47D2802839100169DDF /* introduction.css */; };
+		81A9A4A92802839200169DDF /* ibPolicy.html in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A47E2802839100169DDF /* ibPolicy.html */; };
+		81A9A4AA2802839200169DDF /* banner.html in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A47F2802839100169DDF /* banner.html */; };
+		81A9A4AB2802839200169DDF /* ibPolicy.js in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A4822802839100169DDF /* ibPolicy.js */; };
+		81A9A4AC2802839200169DDF /* dealerNews.js in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A4832802839100169DDF /* dealerNews.js */; };
+		81A9A4AD2802839200169DDF /* introduction.js in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A4842802839100169DDF /* introduction.js */; };
+		81A9A4AE2802839200169DDF /* mui.previewimage.js in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A4862802839100169DDF /* mui.previewimage.js */; };
+		81A9A4AF2802839200169DDF /* public.js in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A4872802839100169DDF /* public.js */; };
+		81A9A4B02802839200169DDF /* mui.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A4882802839100169DDF /* mui.min.js */; };
+		81A9A4B12802839200169DDF /* mui.zoom.js in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A4892802839100169DDF /* mui.zoom.js */; };
+		81A9A4B22802839200169DDF /* Compatible.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A48A2802839100169DDF /* Compatible.min.js */; };
+		81A9A4B32802839200169DDF /* ScreenAdaptation.js in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A48B2802839100169DDF /* ScreenAdaptation.js */; };
+		81A9A4B42802839200169DDF /* layer.js in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A48C2802839100169DDF /* layer.js */; };
+		81A9A4B52802839200169DDF /* banner.js in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A48E2802839100169DDF /* banner.js */; };
+		81A9A4B62802839200169DDF /* industryNews.js in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A48F2802839100169DDF /* industryNews.js */; };
+		81A9A4B72802839200169DDF /* Introduction.html in Resources */ = {isa = PBXBuildFile; fileRef = 81A9A4902802839100169DDF /* Introduction.html */; };
+		81A9A4B82802839200169DDF /* ZXYWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A9A4912802839100169DDF /* ZXYWebViewController.swift */; };
+		81A9A4B92802839200169DDF /* ZXYLocalWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A9A4922802839100169DDF /* ZXYLocalWebViewController.swift */; };
+		81A9A4BB28029D2200169DDF /* TwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A9A4BA28029D2200169DDF /* TwoViewController.swift */; };
+		D8A72BE3257FADCD00D8F796 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A72BE2257FADCD00D8F796 /* AppDelegate.swift */; };
+		D8A72BE7257FADCD00D8F796 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A72BE6257FADCD00D8F796 /* ViewController.swift */; };
+		D8A72BEA257FADCD00D8F796 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A72BE8257FADCD00D8F796 /* Main.storyboard */; };
+		D8A72BEC257FADCD00D8F796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8A72BEB257FADCD00D8F796 /* Assets.xcassets */; };
+		D8A72BEF257FADCD00D8F796 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8A72BED257FADCD00D8F796 /* LaunchScreen.storyboard */; };
+		D8A72BFA257FADCD00D8F796 /* ZXYWebViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A72BF9257FADCD00D8F796 /* ZXYWebViewTests.swift */; };
+		D8A72C05257FADCE00D8F796 /* ZXYWebViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8A72C04257FADCE00D8F796 /* ZXYWebViewUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D8A72BF6257FADCD00D8F796 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8A72BD7257FADCC00D8F796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8A72BDE257FADCD00D8F796;
+			remoteInfo = ZXYWebView;
+		};
+		D8A72C01257FADCE00D8F796 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D8A72BD7257FADCC00D8F796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D8A72BDE257FADCD00D8F796;
+			remoteInfo = ZXYWebView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04462CFC79BE04B8A8BB2597 /* Pods-ZXYWebViewTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXYWebViewTests.release.xcconfig"; path = "Target Support Files/Pods-ZXYWebViewTests/Pods-ZXYWebViewTests.release.xcconfig"; sourceTree = "<group>"; };
+		13C6680160A20ACF28C4B0BE /* Pods_ZXYWebViewTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZXYWebViewTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E03BF569D81B4734DEED4BB /* Pods-ZXYWebView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXYWebView.release.xcconfig"; path = "Target Support Files/Pods-ZXYWebView/Pods-ZXYWebView.release.xcconfig"; sourceTree = "<group>"; };
+		2EFDF7CCB0263DB83E8E865C /* Pods-ZXYWebViewTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXYWebViewTests.debug.xcconfig"; path = "Target Support Files/Pods-ZXYWebViewTests/Pods-ZXYWebViewTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3FA746C044F7A1EB9A2C5995 /* Pods_ZXYWebView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZXYWebView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D72974BF3153424D484ED1 /* Pods-ZXYWebView-ZXYWebViewUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXYWebView-ZXYWebViewUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZXYWebView-ZXYWebViewUITests/Pods-ZXYWebView-ZXYWebViewUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4E764B9E7F5A62E39D3BD1D5 /* Pods-ZXYWebView-ZXYWebViewUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXYWebView-ZXYWebViewUITests.release.xcconfig"; path = "Target Support Files/Pods-ZXYWebView-ZXYWebViewUITests/Pods-ZXYWebView-ZXYWebViewUITests.release.xcconfig"; sourceTree = "<group>"; };
+		81A9A4652802839100169DDF /* ZXYWebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXYWebView.swift; sourceTree = "<group>"; };
+		81A9A4662802839100169DDF /* ZXYWebViewPool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXYWebViewPool.swift; sourceTree = "<group>"; };
+		81A9A4672802839100169DDF /* ZXYWebEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXYWebEntity.swift; sourceTree = "<group>"; };
+		81A9A4682802839100169DDF /* ZXYWebNavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXYWebNavigationBar.swift; sourceTree = "<group>"; };
+		81A9A4692802839100169DDF /* ZXYWebViewHandle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXYWebViewHandle.swift; sourceTree = "<group>"; };
+		81A9A46B2802839100169DDF /* dealerNews.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = dealerNews.html; sourceTree = "<group>"; };
+		81A9A46C2802839100169DDF /* industryNews.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = industryNews.html; sourceTree = "<group>"; };
+		81A9A46E2802839100169DDF /* gray_stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gray_stars.png; sourceTree = "<group>"; };
+		81A9A46F2802839100169DDF /* finger_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = finger_down.png; sourceTree = "<group>"; };
+		81A9A4702802839100169DDF /* gold_stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gold_stars.png; sourceTree = "<group>"; };
+		81A9A4712802839100169DDF /* left_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = left_arrow.png; sourceTree = "<group>"; };
+		81A9A4722802839100169DDF /* triangle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = triangle.png; sourceTree = "<group>"; };
+		81A9A4732802839100169DDF /* finger_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = finger_up.png; sourceTree = "<group>"; };
+		81A9A4742802839100169DDF /* play1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play1.png; sourceTree = "<group>"; };
+		81A9A4752802839100169DDF /* parse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = parse.png; sourceTree = "<group>"; };
+		81A9A4762802839100169DDF /* play2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play2.png; sourceTree = "<group>"; };
+		81A9A4782802839100169DDF /* newsDetails.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = newsDetails.css; sourceTree = "<group>"; };
+		81A9A4792802839100169DDF /* public.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = public.css; sourceTree = "<group>"; };
+		81A9A47A2802839100169DDF /* previewImage.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = previewImage.css; sourceTree = "<group>"; };
+		81A9A47B2802839100169DDF /* mui.min.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = mui.min.css; sourceTree = "<group>"; };
+		81A9A47C2802839100169DDF /* ShareHeader.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = ShareHeader.css; sourceTree = "<group>"; };
+		81A9A47D2802839100169DDF /* introduction.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = introduction.css; sourceTree = "<group>"; };
+		81A9A47E2802839100169DDF /* ibPolicy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = ibPolicy.html; sourceTree = "<group>"; };
+		81A9A47F2802839100169DDF /* banner.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = banner.html; sourceTree = "<group>"; };
+		81A9A4822802839100169DDF /* ibPolicy.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ibPolicy.js; sourceTree = "<group>"; };
+		81A9A4832802839100169DDF /* dealerNews.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = dealerNews.js; sourceTree = "<group>"; };
+		81A9A4842802839100169DDF /* introduction.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = introduction.js; sourceTree = "<group>"; };
+		81A9A4862802839100169DDF /* mui.previewimage.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mui.previewimage.js; sourceTree = "<group>"; };
+		81A9A4872802839100169DDF /* public.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = public.js; sourceTree = "<group>"; };
+		81A9A4882802839100169DDF /* mui.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mui.min.js; sourceTree = "<group>"; };
+		81A9A4892802839100169DDF /* mui.zoom.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = mui.zoom.js; sourceTree = "<group>"; };
+		81A9A48A2802839100169DDF /* Compatible.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = Compatible.min.js; sourceTree = "<group>"; };
+		81A9A48B2802839100169DDF /* ScreenAdaptation.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ScreenAdaptation.js; sourceTree = "<group>"; };
+		81A9A48C2802839100169DDF /* layer.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = layer.js; sourceTree = "<group>"; };
+		81A9A48E2802839100169DDF /* banner.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = banner.js; sourceTree = "<group>"; };
+		81A9A48F2802839100169DDF /* industryNews.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = industryNews.js; sourceTree = "<group>"; };
+		81A9A4902802839100169DDF /* Introduction.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Introduction.html; sourceTree = "<group>"; };
+		81A9A4912802839100169DDF /* ZXYWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXYWebViewController.swift; sourceTree = "<group>"; };
+		81A9A4922802839100169DDF /* ZXYLocalWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZXYLocalWebViewController.swift; sourceTree = "<group>"; };
+		81A9A4BA28029D2200169DDF /* TwoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwoViewController.swift; sourceTree = "<group>"; };
+		D1375D7C597A8E0797FFF8F2 /* Pods-ZXYWebView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXYWebView.debug.xcconfig"; path = "Target Support Files/Pods-ZXYWebView/Pods-ZXYWebView.debug.xcconfig"; sourceTree = "<group>"; };
+		D8A72BDF257FADCD00D8F796 /* ZXYWebView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZXYWebView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8A72BE2257FADCD00D8F796 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D8A72BE6257FADCD00D8F796 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D8A72BE9257FADCD00D8F796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D8A72BEB257FADCD00D8F796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D8A72BEE257FADCD00D8F796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D8A72BF0257FADCD00D8F796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8A72BF5257FADCD00D8F796 /* ZXYWebViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZXYWebViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8A72BF9257FADCD00D8F796 /* ZXYWebViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXYWebViewTests.swift; sourceTree = "<group>"; };
+		D8A72BFB257FADCD00D8F796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8A72C00257FADCE00D8F796 /* ZXYWebViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZXYWebViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D8A72C04257FADCE00D8F796 /* ZXYWebViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZXYWebViewUITests.swift; sourceTree = "<group>"; };
+		D8A72C06257FADCE00D8F796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2BF0BF6CF4555DE8B6C14AA /* Pods_ZXYWebView_ZXYWebViewUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZXYWebView_ZXYWebViewUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D8A72BDC257FADCD00D8F796 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F4BAB52A23D60DDF6D1692 /* Pods_ZXYWebView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8A72BF2257FADCD00D8F796 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BF9EC117D661AF5AC8BF7C0 /* Pods_ZXYWebViewTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8A72BFD257FADCE00D8F796 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29034885FA60029E14A6C1EE /* Pods_ZXYWebView_ZXYWebViewUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02746AD5C362BED6749E4547 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FA746C044F7A1EB9A2C5995 /* Pods_ZXYWebView.framework */,
+				E2BF0BF6CF4555DE8B6C14AA /* Pods_ZXYWebView_ZXYWebViewUITests.framework */,
+				13C6680160A20ACF28C4B0BE /* Pods_ZXYWebViewTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		309CB5CE6A8534282D5ECFA7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1375D7C597A8E0797FFF8F2 /* Pods-ZXYWebView.debug.xcconfig */,
+				1E03BF569D81B4734DEED4BB /* Pods-ZXYWebView.release.xcconfig */,
+				47D72974BF3153424D484ED1 /* Pods-ZXYWebView-ZXYWebViewUITests.debug.xcconfig */,
+				4E764B9E7F5A62E39D3BD1D5 /* Pods-ZXYWebView-ZXYWebViewUITests.release.xcconfig */,
+				2EFDF7CCB0263DB83E8E865C /* Pods-ZXYWebViewTests.debug.xcconfig */,
+				04462CFC79BE04B8A8BB2597 /* Pods-ZXYWebViewTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		81A9A4642802839100169DDF /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				81A9A4652802839100169DDF /* ZXYWebView.swift */,
+				81A9A4662802839100169DDF /* ZXYWebViewPool.swift */,
+				81A9A4672802839100169DDF /* ZXYWebEntity.swift */,
+				81A9A4682802839100169DDF /* ZXYWebNavigationBar.swift */,
+				81A9A4692802839100169DDF /* ZXYWebViewHandle.swift */,
+				81A9A46A2802839100169DDF /* newsHtmlFiles */,
+				81A9A4912802839100169DDF /* ZXYWebViewController.swift */,
+				81A9A4922802839100169DDF /* ZXYLocalWebViewController.swift */,
+			);
+			path = WKWebView;
+			sourceTree = "<group>";
+		};
+		81A9A46A2802839100169DDF /* newsHtmlFiles */ = {
+			isa = PBXGroup;
+			children = (
+				81A9A46B2802839100169DDF /* dealerNews.html */,
+				81A9A46C2802839100169DDF /* industryNews.html */,
+				81A9A46D2802839100169DDF /* img */,
+				81A9A4772802839100169DDF /* styles */,
+				81A9A47E2802839100169DDF /* ibPolicy.html */,
+				81A9A47F2802839100169DDF /* banner.html */,
+				81A9A4802802839100169DDF /* scripts */,
+				81A9A4902802839100169DDF /* Introduction.html */,
+			);
+			path = newsHtmlFiles;
+			sourceTree = "<group>";
+		};
+		81A9A46D2802839100169DDF /* img */ = {
+			isa = PBXGroup;
+			children = (
+				81A9A46E2802839100169DDF /* gray_stars.png */,
+				81A9A46F2802839100169DDF /* finger_down.png */,
+				81A9A4702802839100169DDF /* gold_stars.png */,
+				81A9A4712802839100169DDF /* left_arrow.png */,
+				81A9A4722802839100169DDF /* triangle.png */,
+				81A9A4732802839100169DDF /* finger_up.png */,
+				81A9A4742802839100169DDF /* play1.png */,
+				81A9A4752802839100169DDF /* parse.png */,
+				81A9A4762802839100169DDF /* play2.png */,
+			);
+			path = img;
+			sourceTree = "<group>";
+		};
+		81A9A4772802839100169DDF /* styles */ = {
+			isa = PBXGroup;
+			children = (
+				81A9A4782802839100169DDF /* newsDetails.css */,
+				81A9A4792802839100169DDF /* public.css */,
+				81A9A47A2802839100169DDF /* previewImage.css */,
+				81A9A47B2802839100169DDF /* mui.min.css */,
+				81A9A47C2802839100169DDF /* ShareHeader.css */,
+				81A9A47D2802839100169DDF /* introduction.css */,
+			);
+			path = styles;
+			sourceTree = "<group>";
+		};
+		81A9A4802802839100169DDF /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				81A9A4812802839100169DDF /* broker */,
+				81A9A4852802839100169DDF /* public */,
+				81A9A48D2802839100169DDF /* news */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		81A9A4812802839100169DDF /* broker */ = {
+			isa = PBXGroup;
+			children = (
+				81A9A4822802839100169DDF /* ibPolicy.js */,
+				81A9A4832802839100169DDF /* dealerNews.js */,
+				81A9A4842802839100169DDF /* introduction.js */,
+			);
+			path = broker;
+			sourceTree = "<group>";
+		};
+		81A9A4852802839100169DDF /* public */ = {
+			isa = PBXGroup;
+			children = (
+				81A9A4862802839100169DDF /* mui.previewimage.js */,
+				81A9A4872802839100169DDF /* public.js */,
+				81A9A4882802839100169DDF /* mui.min.js */,
+				81A9A4892802839100169DDF /* mui.zoom.js */,
+				81A9A48A2802839100169DDF /* Compatible.min.js */,
+				81A9A48B2802839100169DDF /* ScreenAdaptation.js */,
+				81A9A48C2802839100169DDF /* layer.js */,
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
+		81A9A48D2802839100169DDF /* news */ = {
+			isa = PBXGroup;
+			children = (
+				81A9A48E2802839100169DDF /* banner.js */,
+				81A9A48F2802839100169DDF /* industryNews.js */,
+			);
+			path = news;
+			sourceTree = "<group>";
+		};
+		D8A72BD6257FADCC00D8F796 = {
+			isa = PBXGroup;
+			children = (
+				D8A72BE1257FADCD00D8F796 /* ZXYWebView */,
+				D8A72BF8257FADCD00D8F796 /* ZXYWebViewTests */,
+				D8A72C03257FADCE00D8F796 /* ZXYWebViewUITests */,
+				D8A72BE0257FADCD00D8F796 /* Products */,
+				309CB5CE6A8534282D5ECFA7 /* Pods */,
+				02746AD5C362BED6749E4547 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D8A72BE0257FADCD00D8F796 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D8A72BDF257FADCD00D8F796 /* ZXYWebView.app */,
+				D8A72BF5257FADCD00D8F796 /* ZXYWebViewTests.xctest */,
+				D8A72C00257FADCE00D8F796 /* ZXYWebViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D8A72BE1257FADCD00D8F796 /* ZXYWebView */ = {
+			isa = PBXGroup;
+			children = (
+				81A9A4642802839100169DDF /* WKWebView */,
+				D8A72BE2257FADCD00D8F796 /* AppDelegate.swift */,
+				D8A72BE6257FADCD00D8F796 /* ViewController.swift */,
+				81A9A4BA28029D2200169DDF /* TwoViewController.swift */,
+				D8A72BE8257FADCD00D8F796 /* Main.storyboard */,
+				D8A72BEB257FADCD00D8F796 /* Assets.xcassets */,
+				D8A72BED257FADCD00D8F796 /* LaunchScreen.storyboard */,
+				D8A72BF0257FADCD00D8F796 /* Info.plist */,
+			);
+			path = ZXYWebView;
+			sourceTree = "<group>";
+		};
+		D8A72BF8257FADCD00D8F796 /* ZXYWebViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				D8A72BF9257FADCD00D8F796 /* ZXYWebViewTests.swift */,
+				D8A72BFB257FADCD00D8F796 /* Info.plist */,
+			);
+			path = ZXYWebViewTests;
+			sourceTree = "<group>";
+		};
+		D8A72C03257FADCE00D8F796 /* ZXYWebViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D8A72C04257FADCE00D8F796 /* ZXYWebViewUITests.swift */,
+				D8A72C06257FADCE00D8F796 /* Info.plist */,
+			);
+			path = ZXYWebViewUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D8A72BDE257FADCD00D8F796 /* ZXYWebView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8A72C09257FADCE00D8F796 /* Build configuration list for PBXNativeTarget "ZXYWebView" */;
+			buildPhases = (
+				3F33312A6B28B4972DB69A96 /* [CP] Check Pods Manifest.lock */,
+				D8A72BDB257FADCD00D8F796 /* Sources */,
+				D8A72BDC257FADCD00D8F796 /* Frameworks */,
+				D8A72BDD257FADCD00D8F796 /* Resources */,
+				C8A592B23862FAB373A12417 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZXYWebView;
+			productName = ZXYWebView;
+			productReference = D8A72BDF257FADCD00D8F796 /* ZXYWebView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D8A72BF4257FADCD00D8F796 /* ZXYWebViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8A72C0C257FADCE00D8F796 /* Build configuration list for PBXNativeTarget "ZXYWebViewTests" */;
+			buildPhases = (
+				F0E84C33ABB9591FB70EF58A /* [CP] Check Pods Manifest.lock */,
+				D8A72BF1257FADCD00D8F796 /* Sources */,
+				D8A72BF2257FADCD00D8F796 /* Frameworks */,
+				D8A72BF3257FADCD00D8F796 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8A72BF7257FADCD00D8F796 /* PBXTargetDependency */,
+			);
+			name = ZXYWebViewTests;
+			productName = ZXYWebViewTests;
+			productReference = D8A72BF5257FADCD00D8F796 /* ZXYWebViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D8A72BFF257FADCE00D8F796 /* ZXYWebViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8A72C0F257FADCE00D8F796 /* Build configuration list for PBXNativeTarget "ZXYWebViewUITests" */;
+			buildPhases = (
+				546795A22FFD99BAADD35981 /* [CP] Check Pods Manifest.lock */,
+				D8A72BFC257FADCE00D8F796 /* Sources */,
+				D8A72BFD257FADCE00D8F796 /* Frameworks */,
+				D8A72BFE257FADCE00D8F796 /* Resources */,
+				4973C8BC09E0586D4FFEB6E8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D8A72C02257FADCE00D8F796 /* PBXTargetDependency */,
+			);
+			name = ZXYWebViewUITests;
+			productName = ZXYWebViewUITests;
+			productReference = D8A72C00257FADCE00D8F796 /* ZXYWebViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D8A72BD7257FADCC00D8F796 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					D8A72BDE257FADCD00D8F796 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					D8A72BF4257FADCD00D8F796 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = D8A72BDE257FADCD00D8F796;
+					};
+					D8A72BFF257FADCE00D8F796 = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = D8A72BDE257FADCD00D8F796;
+					};
+				};
+			};
+			buildConfigurationList = D8A72BDA257FADCC00D8F796 /* Build configuration list for PBXProject "ZXYWebView" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D8A72BD6257FADCC00D8F796;
+			productRefGroup = D8A72BE0257FADCD00D8F796 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D8A72BDE257FADCD00D8F796 /* ZXYWebView */,
+				D8A72BF4257FADCD00D8F796 /* ZXYWebViewTests */,
+				D8A72BFF257FADCE00D8F796 /* ZXYWebViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D8A72BDD257FADCD00D8F796 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81A9A4A42802839200169DDF /* public.css in Resources */,
+				81A9A4B32802839200169DDF /* ScreenAdaptation.js in Resources */,
+				81A9A4A52802839200169DDF /* previewImage.css in Resources */,
+				81A9A4B52802839200169DDF /* banner.js in Resources */,
+				81A9A49F2802839100169DDF /* finger_up.png in Resources */,
+				81A9A4AB2802839200169DDF /* ibPolicy.js in Resources */,
+				81A9A4B22802839200169DDF /* Compatible.min.js in Resources */,
+				81A9A4A32802839100169DDF /* newsDetails.css in Resources */,
+				81A9A49B2802839100169DDF /* finger_down.png in Resources */,
+				81A9A4AE2802839200169DDF /* mui.previewimage.js in Resources */,
+				81A9A49E2802839100169DDF /* triangle.png in Resources */,
+				81A9A4982802839100169DDF /* dealerNews.html in Resources */,
+				D8A72BEF257FADCD00D8F796 /* LaunchScreen.storyboard in Resources */,
+				81A9A49C2802839100169DDF /* gold_stars.png in Resources */,
+				81A9A49A2802839100169DDF /* gray_stars.png in Resources */,
+				81A9A4AA2802839200169DDF /* banner.html in Resources */,
+				81A9A4B72802839200169DDF /* Introduction.html in Resources */,
+				81A9A4992802839100169DDF /* industryNews.html in Resources */,
+				81A9A4B42802839200169DDF /* layer.js in Resources */,
+				81A9A4AD2802839200169DDF /* introduction.js in Resources */,
+				81A9A4A22802839100169DDF /* play2.png in Resources */,
+				81A9A49D2802839100169DDF /* left_arrow.png in Resources */,
+				81A9A4A62802839200169DDF /* mui.min.css in Resources */,
+				81A9A4B12802839200169DDF /* mui.zoom.js in Resources */,
+				D8A72BEC257FADCD00D8F796 /* Assets.xcassets in Resources */,
+				D8A72BEA257FADCD00D8F796 /* Main.storyboard in Resources */,
+				81A9A4AC2802839200169DDF /* dealerNews.js in Resources */,
+				81A9A4A72802839200169DDF /* ShareHeader.css in Resources */,
+				81A9A4B02802839200169DDF /* mui.min.js in Resources */,
+				81A9A4A82802839200169DDF /* introduction.css in Resources */,
+				81A9A4B62802839200169DDF /* industryNews.js in Resources */,
+				81A9A4A92802839200169DDF /* ibPolicy.html in Resources */,
+				81A9A4A12802839100169DDF /* parse.png in Resources */,
+				81A9A4AF2802839200169DDF /* public.js in Resources */,
+				81A9A4A02802839100169DDF /* play1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8A72BF3257FADCD00D8F796 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8A72BFE257FADCE00D8F796 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F33312A6B28B4972DB69A96 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZXYWebView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4973C8BC09E0586D4FFEB6E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZXYWebView-ZXYWebViewUITests/Pods-ZXYWebView-ZXYWebViewUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZXYWebView-ZXYWebViewUITests/Pods-ZXYWebView-ZXYWebViewUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZXYWebView-ZXYWebViewUITests/Pods-ZXYWebView-ZXYWebViewUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		546795A22FFD99BAADD35981 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZXYWebView-ZXYWebViewUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8A592B23862FAB373A12417 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZXYWebView/Pods-ZXYWebView-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZXYWebView/Pods-ZXYWebView-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZXYWebView/Pods-ZXYWebView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0E84C33ABB9591FB70EF58A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZXYWebViewTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D8A72BDB257FADCD00D8F796 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81A9A4942802839100169DDF /* ZXYWebViewPool.swift in Sources */,
+				81A9A4B82802839200169DDF /* ZXYWebViewController.swift in Sources */,
+				81A9A4972802839100169DDF /* ZXYWebViewHandle.swift in Sources */,
+				D8A72BE7257FADCD00D8F796 /* ViewController.swift in Sources */,
+				D8A72BE3257FADCD00D8F796 /* AppDelegate.swift in Sources */,
+				81A9A4B92802839200169DDF /* ZXYLocalWebViewController.swift in Sources */,
+				81A9A4952802839100169DDF /* ZXYWebEntity.swift in Sources */,
+				81A9A4962802839100169DDF /* ZXYWebNavigationBar.swift in Sources */,
+				81A9A4932802839100169DDF /* ZXYWebView.swift in Sources */,
+				81A9A4BB28029D2200169DDF /* TwoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8A72BF1257FADCD00D8F796 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8A72BFA257FADCD00D8F796 /* ZXYWebViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8A72BFC257FADCE00D8F796 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8A72C05257FADCE00D8F796 /* ZXYWebViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D8A72BF7257FADCD00D8F796 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8A72BDE257FADCD00D8F796 /* ZXYWebView */;
+			targetProxy = D8A72BF6257FADCD00D8F796 /* PBXContainerItemProxy */;
+		};
+		D8A72C02257FADCE00D8F796 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D8A72BDE257FADCD00D8F796 /* ZXYWebView */;
+			targetProxy = D8A72C01257FADCE00D8F796 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D8A72BE8257FADCD00D8F796 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8A72BE9257FADCD00D8F796 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D8A72BED257FADCD00D8F796 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D8A72BEE257FADCD00D8F796 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D8A72C07257FADCE00D8F796 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D8A72C08257FADCE00D8F796 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D8A72C0A257FADCE00D8F796 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1375D7C597A8E0797FFF8F2 /* Pods-ZXYWebView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZXYWebView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zxy.ZXYWebView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D8A72C0B257FADCE00D8F796 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E03BF569D81B4734DEED4BB /* Pods-ZXYWebView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZXYWebView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zxy.ZXYWebView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D8A72C0D257FADCE00D8F796 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EFDF7CCB0263DB83E8E865C /* Pods-ZXYWebViewTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZXYWebViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zxy.ZXYWebViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZXYWebView.app/ZXYWebView";
+			};
+			name = Debug;
+		};
+		D8A72C0E257FADCE00D8F796 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04462CFC79BE04B8A8BB2597 /* Pods-ZXYWebViewTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZXYWebViewTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zxy.ZXYWebViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZXYWebView.app/ZXYWebView";
+			};
+			name = Release;
+		};
+		D8A72C10257FADCE00D8F796 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47D72974BF3153424D484ED1 /* Pods-ZXYWebView-ZXYWebViewUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZXYWebViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zxy.ZXYWebViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZXYWebView;
+			};
+			name = Debug;
+		};
+		D8A72C11257FADCE00D8F796 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E764B9E7F5A62E39D3BD1D5 /* Pods-ZXYWebView-ZXYWebViewUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ZXYWebViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zxy.ZXYWebViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ZXYWebView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D8A72BDA257FADCC00D8F796 /* Build configuration list for PBXProject "ZXYWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8A72C07257FADCE00D8F796 /* Debug */,
+				D8A72C08257FADCE00D8F796 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8A72C09257FADCE00D8F796 /* Build configuration list for PBXNativeTarget "ZXYWebView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8A72C0A257FADCE00D8F796 /* Debug */,
+				D8A72C0B257FADCE00D8F796 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8A72C0C257FADCE00D8F796 /* Build configuration list for PBXNativeTarget "ZXYWebViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8A72C0D257FADCE00D8F796 /* Debug */,
+				D8A72C0E257FADCE00D8F796 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8A72C0F257FADCE00D8F796 /* Build configuration list for PBXNativeTarget "ZXYWebViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D8A72C10257FADCE00D8F796 /* Debug */,
+				D8A72C11257FADCE00D8F796 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D8A72BD7257FADCC00D8F796 /* Project object */;
+}

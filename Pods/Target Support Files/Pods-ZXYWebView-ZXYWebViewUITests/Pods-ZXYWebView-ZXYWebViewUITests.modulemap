@@ -1,0 +1,6 @@
+framework module Pods_ZXYWebView_ZXYWebViewUITests {
+  umbrella header "Pods-ZXYWebView-ZXYWebViewUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
